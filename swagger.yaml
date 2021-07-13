@@ -18,13 +18,6 @@ paths:
             default: items=0-9999
           required: true
         - in: header
-          name: content-type
-          schema:
-            type: string
-            enum: 
-              - application/json
-          required: true
-        - in: header
           name: sec-fetch-mode
           schema:
             type: string

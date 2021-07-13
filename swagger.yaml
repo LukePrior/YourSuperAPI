@@ -30,13 +30,9 @@ paths:
         - in: query
           name: Filter
           schema:
-            type: object
-            properties:
-              clientIdentifierTypeCode:
-                type: integer
-            required:
-              - clientIdentifierTypeCode
+            type: string
           required: true
+          
       responses:
         '206':
           description: OK

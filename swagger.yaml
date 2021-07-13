@@ -23,6 +23,7 @@ paths:
             type: string
             enum: 
               - application/json
+            required: true
         - in: header
           name: sec-fetch-mode
           schema:
@@ -30,11 +31,13 @@ paths:
             enum: 
               - cors
           required: true
+          
         - in: query
           name: Filter
           schema:
             type: string
-          required: false
+          allowReserved: true
+          required: true
       responses:
         '206':
           description: OK

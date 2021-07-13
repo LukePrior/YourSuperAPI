@@ -30,8 +30,14 @@ paths:
         - in: query
           name: Filter
           schema:
-            type: string
-          allowReserved: true
+            type: array
+            items:
+              type: object
+              properties:
+                clientIdentifierTypeCode:
+                  type: integer
+              required:
+                - clientIdentifierTypeCode
           required: true
       responses:
         '206':

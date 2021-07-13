@@ -10,6 +10,8 @@ paths:
   /APRAData:
     get:
       summary: Returns Super Products
+      produces:
+        - "application/json"
       parameters:
         - in: header
           name: range

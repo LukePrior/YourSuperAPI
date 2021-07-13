@@ -23,8 +23,8 @@ paths:
             type: string
             enum: 
               - application/json
-        - in: sec-fetch-mode
-          name: content-type
+        - in: header
+          name: sec-fetch-mode
           schema:
             type: string
             enum: 

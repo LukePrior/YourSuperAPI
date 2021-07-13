@@ -22,7 +22,7 @@ paths:
           name: Filter
           schema:
             type: string
-            default: ''clientIdentifierTypeCode=0,clientIdentifierValueID=0,individualAgeNumber=50,performanceRatingCode=All,privateFundsExcludedIndicator=false,retrieveAllProductsIndicator=false,superannuationIndividualAccountBalanceAmount=50000.00''
+            default: "'clientIdentifierTypeCode=0,clientIdentifierValueID=0,individualAgeNumber=50,performanceRatingCode=All,privateFundsExcludedIndicator=false,retrieveAllProductsIndicator=false,superannuationIndividualAccountBalanceAmount=50000.00'"
           allowReserved: true 
           required: true
           

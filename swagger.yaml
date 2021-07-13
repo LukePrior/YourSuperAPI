@@ -15,7 +15,13 @@ paths:
           name: range
           schema:
             type: string
+            default: items=0-9999
           required: true
+        - in: query
+          name: Filter
+          schema:
+            type: object
+          required: false
       responses:
         '206':
           description: OK

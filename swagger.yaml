@@ -1,0 +1,15 @@
+openapi: 3.0.0
+info:
+  title: YourSuper API
+  description: This is a OpenAPI definition for the Australian Taxation Office YourSuper API
+  version: 1.0.0
+servers:
+  - url: https://www.ato.gov.au/api/v1/YourSuper
+    description: Main public server
+paths:
+  /APRAData:
+    get:
+      summary: Returns Super Products
+      responses:
+        '206':
+          description: OK

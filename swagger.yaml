@@ -17,10 +17,23 @@ paths:
             type: string
             default: items=0-9999
           required: true
+        - in: header
+          name: content-type
+          schema:
+            type: string
+            enum: 
+              - application/json
+        - in: sec-fetch-mode
+          name: content-type
+          schema:
+            type: string
+            enum: 
+              - cors
+          required: true
         - in: query
           name: Filter
           schema:
-            type: object
+            type: string
           required: false
       responses:
         '206':

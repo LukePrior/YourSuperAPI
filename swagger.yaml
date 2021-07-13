@@ -31,6 +31,7 @@ paths:
           name: Filter
           schema:
             type: string
+          allowReserved: true 
           required: true
           
       responses:

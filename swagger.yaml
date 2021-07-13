@@ -10,6 +10,12 @@ paths:
   /APRAData:
     get:
       summary: Returns Super Products
+      parameters:
+        - in: header
+          name: range
+          schema:
+            type: string
+          required: true
       responses:
         '206':
           description: OK

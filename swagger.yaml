@@ -23,7 +23,7 @@ paths:
             type: string
             enum: 
               - application/json
-            required: true
+          required: true
         - in: header
           name: sec-fetch-mode
           schema:

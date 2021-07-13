@@ -10,21 +10,12 @@ paths:
   /APRAData:
     get:
       summary: Returns Super Products
-      produces:
-        - "application/json"
       parameters:
         - in: header
           name: range
           schema:
             type: string
             default: items=0-9999
-          required: true
-        - in: header
-          name: sec-fetch-mode
-          schema:
-            type: string
-            enum: 
-              - cors
           required: true
           
         - in: query
